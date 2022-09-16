@@ -12,10 +12,11 @@ def play():
 
     return 'You lost'
 
-        #r > s , p > r , s > p
+        
 
 def its_a_win(player, opponent):
     #Returns True if player wins
+    #r > s , p > r , s > p - Winning rules
 
     if (player == 'r' and opponent == 's') or (player == "p" and opponent == "r") or (player == "s" and opponent == "p"):
         return True
