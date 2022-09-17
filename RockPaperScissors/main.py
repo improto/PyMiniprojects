@@ -1,8 +1,8 @@
 import random
 
 def play():
-    user_choice = input("'r' for rock, 'p' for paper, 's' for scissors\t")
     computer_choice = random.choice(['r', 'p', 's'])
+    user_choice = input("'r' for rock, 'p' for paper, 's' for scissors\t").lower()
 
     if user_choice == computer_choice:
         return 'Its a Tie'
