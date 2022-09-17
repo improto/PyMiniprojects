@@ -21,4 +21,3 @@ def itsLower(a):
         return True
     return False
 
-
