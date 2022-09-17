@@ -1,6 +1,7 @@
 import random
 
-def play(highest):
+#the player guesses the numbers
+def userGuess(highest):
     randValue = random.randint(1,highest)
     userValue = 0
 
@@ -15,7 +16,9 @@ def play(highest):
     return 'Congratulations!!! You win!'
 
 
-def autoGuess(randValue):
+#Computer guesses with no human interaction except entering value to guess
+def autoGuess():
+    randValue = int(input("Enter number to be guessed\t"))
 
     compValue = random.randint(1,(randValue*randValue)) #higher limit set to square of the correct value
     count = 1
@@ -70,4 +73,3 @@ def interactiveGuess():
     print(f"Guessed {count} times")
     return("Yay!!!Computer guessed the number")
 
-print(interactiveGuess())
