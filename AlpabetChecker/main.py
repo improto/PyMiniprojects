@@ -1,7 +1,7 @@
 #Checks if a selected character is in the alphabet and its casing
 
 
-def isAlphabet(a):
+def itsAlphabet(a):
     #return True if alphabetic
     a = str(a)      #Convert input to a string for processing
 
