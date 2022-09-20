@@ -46,7 +46,6 @@ def autoGuess():
 
 #involves the user with the system guessing
 def interactiveGuess():
-
     randValue = int(input("Enter number to be guessed\t"))
 
     compValue = random.randint(1,(randValue*randValue)) #higher limit set to square of the correct value
